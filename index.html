@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Verónica D'Angelo</title>
+<meta name="description" content="Verónica D'Angelo. Becaria postdoctoral CONICET. Psicología cognitiva, aprendizaje, educación y tecnología. Publicaciones, libros y tesis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --fondo: #ffffff;
+    --tinta: #1f2a33;
+    --gris: #66727c;
+    --linea: #dde3e7;
+    --enlace: #1d5c7a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --fondo: #161b1f; --tinta: #e3e8eb; --gris: #9aa6ae; --linea: #2b343a; --enlace: #8cc4de; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--fondo); color: var(--tinta);
+    font-family: "Literata", Georgia, "Times New Roman", serif;
+    font-size: 17px; line-height: 1.65;
+  }
+  main { max-width: 40rem; margin: 0 auto; padding: 4rem 1.4rem 5rem; }
+  a { color: var(--enlace); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  a:focus-visible { outline: 2px solid var(--enlace); outline-offset: 2px; }
+
+  header { display: flex; gap: 1.6rem; align-items: flex-start; margin-bottom: 2.8rem; }
+  .foto { width: 112px; height: 140px; object-fit: cover; flex-shrink: 0; background: var(--linea); filter: grayscale(100%); }
+  h1 { font-size: 1.9rem; font-weight: 400; line-height: 1.15; margin: 0 0 .5rem; letter-spacing: -.01em; }
+  .rol { margin: 0; }
+  .centros { margin: 0; }
+
+  .intro { margin: 0 0 3rem; }
+
+  h2 { font-size: 1rem; font-weight: 600; margin: 3.2rem 0 1.1rem; padding-bottom: .4rem; border-bottom: 1px solid var(--linea); }
+  .anio { display: grid; grid-template-columns: 3.4rem 1fr; gap: 0 1rem; margin-bottom: 1.2rem; }
+  .anio h3 { font-size: .95rem; font-weight: 400; color: var(--gris); margin: .1rem 0 0; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  li { margin-bottom: 1rem; font-size: .95rem; }
+  li .titulo { display: block; }
+  li .datos { color: var(--gris); }
+  li a { white-space: nowrap; }
+
+  .enlaces { margin-top: 3.5rem; display: flex; flex-wrap: wrap; gap: .6rem 1.6rem; }
+  footer { margin-top: 3rem; color: var(--gris); font-size: .8rem; }
+
+  @media (max-width: 520px) {
+    main { padding-top: 2.5rem; }
+    header { flex-direction: column-reverse; gap: 1.2rem; }
+    .anio { grid-template-columns: 1fr; }
+    .anio h3 { margin-bottom: .4rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <div>
+      <h1>Verónica D'Angelo</h1>
+      <p class="rol">Docente. Investigadora en CAEDHPSI (UAI)</p>
+      <p class="centros">Becaria postdoctoral CONICET</p>
+    </div>
+    <!-- Subí tu foto con el nombre foto.jpg en la misma carpeta que este archivo -->
+    <img class="foto" src="foto.jpg" alt="Retrato de Verónica D'Angelo">
+  </header>
+
+  <p class="intro">Investigación en psicología cognitiva, aprendizaje, educación y tecnología. Estudio cómo diversos procesos de abstracción y metacognitivos pueden promover el recuerdo y la transferencia de conceptos abstractos, por ejemplo, la configuración de los ejemplos, la analogía y la reelaboración de textos, y cómo las nuevas herramientas tecnológicas pueden contribuir en ese proceso.</p>
+
+  <!-- Para agregar un trabajo: copiá un <li>...</li> completo dentro del año que corresponda.
+       Para agregar un año: copiá un bloque <div class="anio">...</div> entero. -->
+
+  <section>
+    <h2>Artículos</h2>
+
+    <div class="anio">
+      <h3>2026</h3>
+      <ul>
+        <li>
+          <span class="titulo">Effects of the diversity of examples on how L1 and L2 learners apply abstract concepts</span>
+          <span class="datos">D'Angelo, V. y Trench, M. <em>Learning and Instruction</em>.</span>
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0959475226000952">Artículo</a>
+        </li>
+        <li>
+          <span class="titulo">Transferencia de conceptos básicos de programación de la escuela media a la universidad</span>
+          <span class="datos">D'Angelo, V. y Hernández, A. M. <em>Revista Digital Educación en Ingeniería</em>, 21(41), 1–10.</span>
+          <a href="https://doi.org/10.26507/rei.v21n41.1328">DOI</a>
+        </li>
+        <li>
+          <span class="titulo">Simplificación y reelaboración asistida con LLM: un enfoque modular basado en prompting para la comprensión de textos expositivos</span>
+          <span class="datos">D'Angelo, V. <em>RAIA</em>, 10(1).</span>
+          <a href="https://raia.revistasuai.ar/index.php/raia/index">Revista</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="anio">
+      <h3>2025</h3>
+      <ul>
+        <li>
+          <span class="titulo">Innovar en la formación inicial de futuros ingenieros: un análisis multidimensional situado de sostenibilidad de prácticas educativas mediatizadas integrando un Fab Lab</span>
+          <span class="datos">Rodríguez, G. L., San Martín, P. S., Manero, L., D'Angelo, V. y Ades, D. <em>Ingeniare. Revista Chilena de Ingeniería</em>, 33.</span>
+          <a href="https://doi.org/10.64966/ingeniare.v33.17">DOI</a>
+        </li>
+        <li>
+          <span class="titulo">La escritura en Ingeniería Informática: una herramienta para la comunicación, la abstracción y el conocimiento</span>
+          <span class="datos">D'Angelo, V. <em>Aula Universitaria</em>, (26), e0057.</span>
+          <a href="https://doi.org/10.14409/au.2025.26.e0057">DOI</a>
+        </li>
+        <li>
+          <span class="titulo">Del uso instrumental al enfoque epistémico: repensar la tecnología desde las ciencias del aprendizaje</span>
+          <span class="datos">D'Angelo, V. y Díaz, P. <em>Revista IRICE</em>, (49), e2066.</span>
+          <a href="https://doi.org/10.35305/revistairice.vi49.2066">DOI</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="anio">
+      <h3>2024</h3>
+      <ul>
+        <li>
+          <span class="titulo">Programar en la universidad. Cuadernillo de apoyo cognitivo para el análisis de los procesos</span>
+          <span class="datos">D'Angelo, V. <em>Revista Colombiana de Computación</em>, 25(1).</span>
+          <a href="https://doi.org/10.29375/25392115.4463">DOI</a>
+        </li>
+        <li>
+          <span class="titulo">Software testing education. Teaching the concept of confirmation bias from a pragmatic perspective of reasoning</span>
+          <span class="datos">D'Angelo, V. <em>Studies in Psychology</em>, 45(2–3), 297–337.</span>
+          <a href="https://doi.org/10.1177/02109395241274656">DOI</a> ·
+          <a href="https://www.researchgate.net/publication/384135105_">Traducción al español</a>
+        </li>
+        <li>
+          <span class="titulo">La importancia de los ejemplos ilustrativos en el aprendizaje de conceptos declarativos</span>
+          <span class="datos">D'Angelo, V. S. <em>Revista de Psicología</em>, 20(39), 44–73.</span>
+          <a href="https://doi.org/10.46553/RPSI.20.39.2024.p44-73">DOI</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="anio">
+      <h3>2023</h3>
+      <ul>
+        <li>
+          <span class="titulo">Simulador de doble clic para adultos mayores con limitaciones motoras manuales</span>
+          <span class="datos">D'Angelo, V. <em>Revista Innovaciones Educativas</em>, 25(39), 205–221.</span>
+          <a href="https://doi.org/10.22458/ie.v25i39.4594">DOI</a>
+        </li>
+        <li>
+          <span class="titulo">Robótica en Fab Lab: introducción a la programación para estudiantes de Ingeniería Mecánica</span>
+          <span class="datos">D'Angelo, V. S., Rodríguez, G. L., Sklate, M. F., Pairetti, C. I. y San Martín, P. S. <em>Electronic Journal of SADIO (EJS)</em>, 22(1).</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="anio">
+      <h3>2022</h3>
+      <ul>
+        <li>
+          <span class="titulo">Percepción del uso de aplicaciones 3D de anatomía humana en estudiantes de Kinesiología</span>
+          <span class="datos">D'Angelo, V. y Airasca, D. A. <em>Investigación en Educación Médica</em>, 11(44), 34–45.</span>
+          <a href="https://doi.org/10.22201/fm.20075057e.2022.44.22435">DOI</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="anio">
+      <h3>2021</h3>
+      <ul>
+        <li>
+          <span class="titulo">La habilidad de modelar conectivas lógicas en diferentes dominios</span>
+          <span class="datos">D'Angelo, V. <em>Revista Iberoamericana de Tecnología en Educación y Educación en Tecnología</em>, (30).</span>
+          <a href="https://doi.org/10.24215/18509959.30.e8">DOI</a>
+        </li>
+        <li>
+          <span class="titulo">Referencias de orientación espacial en las app de anatomía 3D</span>
+          <span class="datos">D'Angelo, V. <em>Revista Española de Educación Médica</em>, 2(2).</span>
+          <a href="https://doi.org/10.6018/edumed.473331">DOI</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="anio">
+      <h3>2020</h3>
+      <ul>
+        <li>
+          <span class="titulo">Posibles aportes del razonamiento analógico al problema de la abstracción y transferencia en la enseñanza de programación</span>
+          <span class="datos">D'Angelo, V. <em>Revista Colombiana de Computación</em>, 21(2), 71–82.</span>
+          <a href="https://doi.org/10.29375/25392115.4035">DOI</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="anio">
+      <h3>2018</h3>
+      <ul>
+        <li>
+          <span class="titulo">La programación de ordenadores. Reflexiones sobre la necesidad de un abordaje interdisciplinar</span>
+          <span class="datos">D'Angelo, V. <em>Revista Iberoamericana de Ciencia, Tecnología y Sociedad (CTS)</em>, 13(39).</span>
+          <a href="https://ojs.revistacts.net/index.php/CTS/article/view/83">Artículo</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Libros</h2>
+    <ul>
+      <li>
+        <span class="titulo">Reelaboración de textos expositivos y accesibilidad: una aproximación desde la psicología cognitiva</span>
+        <span class="datos">D'Angelo, V. Teseo, 2026.</span>
+        <a href="https://www.teseopress.com/reelaboraciondetextosexpositivosyaccesibilidad/">Leer en línea</a>
+      </li>
+      <li>
+        <span class="titulo">Algoritmos, estructuras de datos y procesos de pensamiento</span>
+        <span class="datos">D'Angelo, V. Teseo, 2025.</span>
+        <a href="https://www.teseopress.com/algoritmos/">Leer en línea</a>
+      </li>
+      <li>
+        <span class="titulo">Conceptos computacionales con Arduino</span>
+        <span class="datos">Caturegli, C. y D'Angelo, V. Buenos Aires: Teseo, 2022.</span>
+        <a href="https://www.teseopress.com/conceptosarduino">Leer en línea</a>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Capítulos de libro</h2>
+    <ul>
+      <li>
+        <span class="titulo">Ayudas semánticas en la resolución de problemas de cálculo proposicional</span>
+        <span class="datos">D'Angelo, V. (2018). En Buenaventura, Rodríguez et al. (Eds.), <em>Nuevos desafíos en educación. Una mirada interdisciplinaria</em> (pp. 139–153). Buenos Aires: FLACSO Argentina.</span>
+        <a href="http://flacso.org.ar/noticias/nuevos-desafios-en-educacion-una-mirada-interdisciplinaria/">Enlace</a>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Congresos</h2>
+    <ul>
+      <li>
+        <span class="titulo">Aprendizaje de conceptos abstractos en estudiantes que emplean el español como segunda lengua: efectos de la complejidad de las definiciones</span>
+        <span class="datos">D'Angelo, V. y Trench, M. (2023). Congreso de la Asociación Argentina de Ciencias del Comportamiento, Buenos Aires.</span>
+      </li>
+      <li>
+        <span class="titulo">Enhancing distant analogical retrieval via generating abstract redescriptions of the target</span>
+        <span class="datos">D'Angelo, V. y Trench, M. (2020). Póster, Conceptual Abstraction and Analogy in Natural and Artificial Systems, AAAI Symposium, Washington, DC.</span>
+        <a href="https://melaniemitchell.me/SymposiumAbstracts/DAngelo.pdf">PDF</a>
+      </li>
+      <li>
+        <span class="titulo">Psicología y programación</span>
+        <span class="datos">D'Angelo, V. (2017). III Jornadas de Jóvenes Investigadores/as en Educación y Psicología, FLACSO Argentina, Buenos Aires.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Tesis</h2>
+    <ul>
+      <li>
+        <span class="titulo">El uso de ejemplos ilustrativos durante el aprendizaje de conceptos declarativos</span>
+        <span class="datos">Tesis de Doctorado. Universidad Nacional de Córdoba, 2023.</span>
+        <a href="https://www.researchgate.net/publication/375579442_El_uso_de_ejemplos_ilustrativos_durante_el_aprendizaje_de_conceptos_declarativos">Texto completo</a>
+      </li>
+      <li>
+        <span class="titulo">Técnicas de abstracción tardía para promover la transferencia</span>
+        <span class="datos">Tesis de Maestría. FLACSO, Sede Académica Argentina, 2020.</span>
+        <a href="http://hdl.handle.net/10469/17136">Texto completo</a>
+      </li>
+    </ul>
+  </section>
+
+
+  <footer>Actualizado en septiembre de 2026.</footer>
+</main>
+</body>
+</html>
